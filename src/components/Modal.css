@@ -76,7 +76,16 @@
 
 .modal-body--iframe iframe {
   display: block;
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
+}
+
+.close--outside {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.9);
+  color: #1e032d;
+  z-index: 101;
 }
 
 .field { margin-bottom: 18px; }
