@@ -17,7 +17,7 @@
   background: #fff;
   border-radius: 20px;
   width: 100%;
-  max-width: 620px;
+  max-width: 680px;
   overflow: hidden;
   animation: rise 0.25s ease;
 }
@@ -69,6 +69,15 @@
 .close:hover { background: rgba(255, 255, 255, 0.3); }
 
 .modal-body { padding: 30px 34px 34px; }
+
+.modal-body--iframe {
+  padding: 0;
+}
+
+.modal-body--iframe iframe {
+  display: block;
+  border-radius: 0 0 20px 20px;
+}
 
 .field { margin-bottom: 18px; }
 
