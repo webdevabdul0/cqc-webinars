@@ -27,9 +27,7 @@ export default function App() {
         <Route path="/resources/webinars" element={<WebinarsPage onRegister={setModalLabel} />} />
       </Routes>
       <Footer />
-      {modalLabel !== null && (
-        <Modal webinarLabel={modalLabel} onClose={() => setModalLabel(null)} />
-      )}
+      <Modal isOpen={modalLabel !== null} webinarLabel={modalLabel} onClose={() => setModalLabel(null)} />
     </BrowserRouter>
   )
 }

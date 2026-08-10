@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react'
 import './Modal.css'
 
-export default function Modal({ webinarLabel, onClose }) {
+export default function Modal({ isOpen, webinarLabel, onClose }) {
   const overlayRef = useRef(null)
 
   useEffect(() => {
+    if (!isOpen) return
     function onKey(e) {
       if (e.key === 'Escape') onClose()
     }
@@ -14,14 +15,14 @@ export default function Modal({ webinarLabel, onClose }) {
       document.removeEventListener('keydown', onKey)
       document.body.style.overflow = ''
     }
-  }, [onClose])
+  }, [isOpen, onClose])
 
   function handleOverlayClick(e) {
     if (e.target === overlayRef.current) onClose()
   }
 
   return (
-    <div className="overlay open" ref={overlayRef} onClick={handleOverlayClick}>
+    <div className={`overlay${isOpen ? ' open' : ''}`} ref={overlayRef} onClick={handleOverlayClick}>
       <div className="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <button className="close close--outside" onClick={onClose} aria-label="Close">×</button>
         <div className="modal-body modal-body--iframe">
