@@ -9,23 +9,7 @@ export default function Nav({ onRegister }) {
     <nav className="nav">
       <div className="wrap nav-inner">
         <Link className="logo" to="/">
-          <svg width="46" height="34" viewBox="0 0 46 34" fill="none">
-            <defs>
-              <linearGradient id="logo-g" x1="0" y1="34" x2="46" y2="0">
-                <stop offset="0" stopColor="#10C79A" />
-                <stop offset=".45" stopColor="#FFC63C" />
-                <stop offset="1" stopColor="#FF7A45" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M3 31V11c0-5 6-7 9-3l6 9c1.4 2 4 2 5.4 0l6-9c3-4 9-2 9 3v20"
-              stroke="url(#logo-g)"
-              strokeWidth="6"
-              strokeLinecap="round"
-              fill="none"
-            />
-          </svg>
-          <span className="logo-text">CQC MediSolutions</span>
+          <img src="/logo-dark.svg" alt="CQC MediSolutions" className="logo-img" />
         </Link>
 
         <div className="nav-links">

@@ -19,12 +19,10 @@
   text-decoration: none;
 }
 
-.logo svg { display: block; }
-
-.logo-text {
-  font: 700 15px 'Quicksand', sans-serif;
-  color: #fff;
-  white-space: nowrap;
+.logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
