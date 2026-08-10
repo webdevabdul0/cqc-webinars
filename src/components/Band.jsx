@@ -9,7 +9,7 @@ export default function Band() {
           If your application is already in motion, a pre-submission review will get you
           further than a webinar will.
         </p>
-        <a href="#" className="btn btn-teal">Apply for CQC Registration</a>
+        <a href="#" className="btn btn-teal">Book a Call</a>
       </div>
     </div>
   )

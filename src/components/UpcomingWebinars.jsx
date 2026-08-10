@@ -22,17 +22,6 @@ export default function UpcomingWebinars({ onRegister }) {
           </p>
         </div>
 
-        <div className="filters">
-          {stageKeys.map(key => (
-            <button
-              key={key}
-              className={`chip${activeFilter === key ? ' active' : ''}`}
-              onClick={() => setActiveFilter(key)}
-            >
-              {filterLabels[key]}
-            </button>
-          ))}
-        </div>
 
         <div className="grid">
           {filtered.map(w => (

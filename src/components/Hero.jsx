@@ -14,7 +14,6 @@ export default function Hero({ onRegister }) {
           </p>
           <div className="hero-cta">
             <a href="#next" className="btn btn-teal">See what's next</a>
-            <a href="#upcoming" className="btn btn-ghost">Browse the series</a>
           </div>
           <div className="hero-stats">
             <div>
