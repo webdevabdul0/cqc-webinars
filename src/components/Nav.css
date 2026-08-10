@@ -1,0 +1,101 @@
+.nav {
+  background: var(--purple);
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+}
+
+.logo svg { display: block; }
+
+.logo-text {
+  font: 700 15px 'Quicksand', sans-serif;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font: 600 15.5px 'Quicksand', sans-serif;
+}
+
+.nav-links a:hover { color: var(--teal); }
+
+.has-drop { position: relative; }
+
+.has-drop > button {
+  background: none;
+  border: 0;
+  color: var(--magenta);
+  font: 600 15.5px 'Quicksand', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 22px 0;
+}
+
+.drop {
+  position: absolute;
+  top: 100%;
+  left: -24px;
+  min-width: 264px;
+  background: var(--purple);
+  padding: 6px 0 14px;
+  border-radius: 0 0 10px 10px;
+  display: none;
+  z-index: 70;
+}
+
+.has-drop:hover .drop,
+.has-drop:focus-within .drop,
+.has-drop.open .drop {
+  display: block;
+}
+
+.drop a {
+  display: block;
+  padding: 11px 24px;
+  font: 600 15px 'Quicksand', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.drop a:hover { color: var(--teal); }
+.drop a.current { color: var(--teal); }
+
+.tag-new {
+  background: var(--teal);
+  color: var(--purple-deep);
+  font: 700 10px 'Quicksand', sans-serif;
+  padding: 2px 7px;
+  border-radius: 20px;
+  margin-left: 8px;
+  vertical-align: 2px;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 960px) {
+  .nav-links { display: none; }
+}

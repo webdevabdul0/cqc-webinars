@@ -1,0 +1,19 @@
+.band {
+  background: linear-gradient(120deg, var(--purple-deep), var(--purple) 45%, #7A1BA8);
+  color: #fff;
+  text-align: center;
+  padding: 74px 0;
+}
+
+.band h2 {
+  font-size: 38px;
+  margin: 0 0 14px;
+}
+
+.band p {
+  font-size: 17.5px;
+  opacity: 0.9;
+  max-width: 520px;
+  margin: 0 auto 28px;
+  line-height: 1.6;
+}

@@ -1,0 +1,27 @@
+.countdown {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.cd-unit {
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 11px;
+  padding: 12px 0;
+  flex: 1;
+  text-align: center;
+}
+
+.cd-unit b {
+  display: block;
+  font: 700 26px 'Quicksand', sans-serif;
+  color: var(--teal);
+  line-height: 1;
+}
+
+.cd-unit small {
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}

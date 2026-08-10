@@ -1,0 +1,14 @@
+footer {
+  background: var(--purple-deep);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 32px 0;
+  font-size: 14px;
+}
+
+.foot-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}

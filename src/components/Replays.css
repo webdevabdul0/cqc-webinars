@@ -1,0 +1,22 @@
+.catchup {
+  background: #fff;
+  border: 1px solid #E9E1F0;
+  border-radius: 18px;
+  padding: 38px 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  align-items: center;
+}
+
+.catchup p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 16.5px;
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+@media (max-width: 760px) {
+  .catchup { grid-template-columns: 1fr; }
+}
