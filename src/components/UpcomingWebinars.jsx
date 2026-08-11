@@ -51,8 +51,7 @@ function WebinarCard({ webinar: w, onRegister }) {
         </small>
         <button
           className="btn btn-teal btn-sm"
-          disabled={w.full}
-          onClick={() => !w.full && onRegister(`Part ${w.ep} — ${w.title}, Thu ${w.day} ${w.month} ${w.year}`)}
+          onClick={() => onRegister(`Part ${w.ep} — ${w.title}, Thu ${w.day} ${w.month} ${w.year}`)}
         >
           {w.full ? 'Fully booked' : 'Register'}
         </button>

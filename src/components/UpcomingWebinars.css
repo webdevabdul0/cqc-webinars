@@ -128,13 +128,6 @@
 .t-apply  { background: rgba(214, 63, 168, 0.12); color: #B32B87; }
 .t-after  { background: rgba(255, 122, 69, 0.15); color: #C2521F; }
 
-.card.full { opacity: 0.72; }
-.card.full .btn {
-  background: #DCD2E6;
-  color: #6B5A7A;
-  pointer-events: none;
-  cursor: default;
-}
 
 @media (max-width: 960px) {
   .grid { grid-template-columns: 1fr; }
