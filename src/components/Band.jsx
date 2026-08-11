@@ -9,7 +9,7 @@ export default function Band() {
           If your application is already in motion, a pre-submission review will get you
           further than a webinar will.
         </p>
-        <a href="#" className="btn btn-teal">Book a Call</a>
+        <a href="https://calendly.com/smarthealthcompliance/medi-comply-demo-1" target="_blank" rel="noopener noreferrer" className="btn btn-teal">Book a Call</a>
       </div>
     </div>
   )
