@@ -33,8 +33,8 @@ export default function Hero({ onRegister }) {
 
         <div className="hero-visual">
           <img
-            src="https://images.pexels.com/photos/5214963/pexels-photo-5214963.jpeg?auto=compress&cs=tinysrgb&w=900&h=675&dpr=1"
-            alt="Healthcare professional"
+            src="/Group 1000002900.png"
+            alt="Webinar series overview"
           />
         </div>
       </div>
