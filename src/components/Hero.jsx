@@ -33,7 +33,7 @@ export default function Hero({ onRegister }) {
 
         <div className="hero-visual">
           <img
-            src="/Group 1000002900.png"
+            src="/Group 1000002900-2.png"
             alt="Webinar series overview"
           />
         </div>
