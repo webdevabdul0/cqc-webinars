@@ -19,6 +19,8 @@
   text-decoration: none;
 }
 
+.nav-cta { margin-left: auto; }
+
 .logo-img {
   height: 28px;
   width: auto;
